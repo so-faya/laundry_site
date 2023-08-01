@@ -106,7 +106,7 @@ button{
     width: 90%;
     margin: 20px auto;
 }
-.features > h2, .noteforprice{
+.features > h2, .noteforprice,.noteforcontact{
     text-align: center;
     font-weight: 500;
     color: #8a8ef1;
@@ -407,16 +407,17 @@ hr{
 
 /* about section */
 .about{
-    border: 1px solid red;
     margin-top: 130px;
     display: flex;
     justify-content: center;
 }
+.aboutcont{
+    width: 90%;
+
+}
 .aboutholder{
     display: flex;
     justify-content: space-between;
-    border: 1px solid green;
-    width: 90%;
 }
 .aboutimg{
     flex-basis: 35%;
@@ -427,27 +428,22 @@ hr{
     background-position: center;
 }
 .aboutinfo{
-    border: 1px solid black;
     flex-basis: 60%;
 }
 .qualityac{
     display: flex;
-    border: 1px solid red;
     justify-content: space-between;
     margin-top: 30px;
 }
 .qualityinfo{
     flex-basis: 45%;
-    border: 1px solid purple;
-     font-family: normal-lora;
+    font-family: normal-lora;
     font-size: 17px;
     color: rgb(70, 68, 68);
     font-weight: 400;
 }
 .continfo{
     align-self: center;
-    /* justify-content: flex-start; */
-    border: 1px solid green;
     flex-basis: 45%;
     font-size: 17px;
     color: rgb(70, 68, 68);
@@ -458,4 +454,238 @@ hr{
 }
 .continfo>h3{
     font-size: 30px;
+    margin-top: 10px;
+}
+.aboutextra{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 70px;
+}
+.exabout{
+    display: flex;
+    flex-basis: 27%;
+    padding: 50px 45px 50px 20px;
+    text-decoration: none;
+    box-shadow: rgba(57, 57, 114, 0.12) 0px 20px 100px -10px, rgba(39, 38, 114, 0.1) 0px 30px 60px -10px;
+}
+.fa-regular,.fa-solid{
+    margin-right: 20px;
+    font-size: 35px;
+    color: #363cf3;
+    font-weight: lighter;
+}
+.iconyyinfo>h1{
+    color: black;
+    font-weight: 25px;
+}
+.iconyyinfo>p{
+    color: rgb(100, 98, 98);
+    margin-top: 8px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+
+/* contact section */
+.contact{
+    margin-top: 100px;
+}
+.contactholder{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.noteforcontact{
+    text-align: center;
+}
+.contacthd{
+    font-family: normal-lora;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+    margin-bottom: 30px;
+    margin-top: 30px;
+}
+.contactdetails{
+    display: flex;
+    justify-content: space-between; 
+    width: 90%;
+    margin-bottom: 100px;
+}
+.contdetail{
+    text-align: center;
+    padding: 25px;
+    flex-basis: 20%;
+}
+.contdetail:hover{
+    background-color: rgb(240, 239, 239);
+    border-radius: 5%;
+}
+.contacty,.contactinfo{
+    margin-top: 40px;
+}
+.contactinfo>a,.contactinfo>p{
+    color: rgb(65, 64, 64);
+    text-decoration: none;
+    margin-top: 10px;
+}
+/* form */
+.form{
+    width: 48%;
+    padding: 50px 40px 50px 40px;
+    background-color: rgb(246, 244, 252);
+}
+.formhd{
+    font-family: normal-lora;
+    font-size: 40px;
+    color: black;
+    font-weight: bold;
+}
+.form>p{
+    padding-right: 12px;
+    color: black;
+    margin-top: 8px;
+    margin-bottom: 50px;
+    font-size: 18px;
+    font-weight: lighter;
+}
+input,textarea{
+    border: none;
+    height: 50px;
+    margin-bottom: 20px;
+    padding-left: 10px;
+    font-family: normal-lora;
+    font-size: 14px;
+    color: gray;
+}
+textarea{
+    height: 150px;
+}
+.email,.phone{
+    width: 43%;
+}
+.email{
+    margin-right: 30px;
+}
+.form>.name{
+    width: 98%;
+
+}
+.form>div>input{
+    background-color: #0810F1;
+    color: white;
+    margin-top: 20px;
+    height: 50px;
+    width: 50%;
+    padding: 12px 12px;
+}
+
+/* footer */
+footer{
+    margin-top: 100px;
+    padding-top: 70px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: black;
+    
+}
+.footcont{
+    width: 90%;
+}
+.foot-one{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 70px;
+}
+.foot-info,.foot-contact,.foot-newsletter{
+    flex-basis: 30%;
+    flex-grow: 0;
+    flex-shrink: 0;
+}
+.foothd{
+    font-family: normal-lora;
+    font-weight: bold;
+    font-size: 30px;
+    color: rgb(204, 201, 201);
+    margin-bottom: 20px;
+}
+.foothd>span{
+    color: #363cf3;
+}
+.foot-para{
+    font-family: normal-lora;
+    font-weight: lighter;
+    color: rgb(194, 193, 193);
+    
+}
+.foot-info>.foot-para{
+    margin-bottom: 20px;
+}
+.foot-socials{
+    display: flex;
+    gap: 35px;
+}
+.foot-socials>div{
+    height: 30px;
+    width: 30px;
+    text-align: center;
+    line-height: 30px;
+    background-color: gray;
+    border-radius: 50%;
+}
+
+.foot-socials>div>a>i{
+    color: black;
+}
+.foot-para>i,.foot-para>a>i{
+    font-size: 20px;
+    margin-right: 5px;
+}
+.foot-contact>.foot-para{
+    margin-bottom: 12px;
+}
+.foot-para>a{
+    text-decoration: none;
+    font-family: normal-lora;
+    color: rgb(194, 193, 193);
+}
+.foot-newsletter>.foot-para{
+    margin-bottom: 20px;
+}
+#foot-email{
+    width: 80%;
+    height: 45px;
+}
+.foot-sub{
+    width: 50%;
+    background-color: #0810F1;
+    color: white;
+}
+.foot-two{
+    width: 100%;
+    background-color: rgb(194, 193, 193);
+    display: flex;
+    justify-content: center;
+ 
+}
+.foot-two-cont{
+    width: 90%;
+    display: flex;
+    height: 50px;
+    align-items: center;
+    padding: 0px 0px;
+
+}
+.rights{
+    flex-basis: 70%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: gray;
+}
+.policy,.terms{
+    flex-basis: 15%;
+    flex-grow: 0;
+    flex-shrink: 0;
+    color: rgb(104, 104, 104);
 }
